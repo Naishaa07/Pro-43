@@ -19,7 +19,7 @@ function draw() {
   //console.log(hr)
   secAngle=map(sec, 0, 60, 0, 360)
   minAngle=map(min, 0, 60, 0, 360)
-  hrAngle=map(hr, 0, 12, 0, 360)
+  hrAngle=map(hr % 12, 0, 12, 0, 360)
   translate(400,200)
   push();
   rotate(secAngle+270)
